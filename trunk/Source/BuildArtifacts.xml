@@ -28,7 +28,7 @@
     <DestinationDeploymentDir>Deployment\TEST\Packages</DestinationDeploymentDir>
 
     <!-- Name of the zip file created a a result of the build process. -->
-    <!-- <PackageName>Mfc.Inv.RM.Hosts.Web.zip</PackageName> -->
+    <PackageName>Mfc.Inv.RM.Hosts.Web.zip</PackageName>
 
     <!-- List of environments as defined in the repository. 
 				For web components, this must be a match with the Web.<ENV>.config files. 
