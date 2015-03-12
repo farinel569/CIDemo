@@ -20,7 +20,7 @@
     <ProjectBuildfile>CIDemo\CIMain\CIMain.csproj</ProjectBuildfile>
 
     <!-- Only WEB and NON-WEB are allowed; anything else will prevent the component for building.-->
-    <<ProjectType>NON-WEB</ProjectType>
+    <ProjectType>NON-WEB</ProjectType>
 
     <!-- Relative path to the Deployment/<CONFIGURATION>/Packages folder 
 				 This is where the .zip (package) file will be added at build time. 
