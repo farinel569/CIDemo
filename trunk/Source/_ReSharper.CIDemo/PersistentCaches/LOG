@@ -1,5 +1,5 @@
-2015/03/12-09:37:33.220 1204 Recovering log #19
-2015/03/12-09:37:33.238 1204 Level-0 table #21: started
-2015/03/12-09:37:33.240 1204 Level-0 table #21: 2307 bytes OK
-2015/03/12-09:37:33.245 1204 Delete type=0 #19
-2015/03/12-09:37:33.245 1204 Delete type=3 #17
+2015/03/12-09:52:56.917 1bdc Recovering log #22
+2015/03/12-09:52:56.918 1bdc Level-0 table #24: started
+2015/03/12-09:52:56.920 1bdc Level-0 table #24: 384 bytes OK
+2015/03/12-09:52:56.924 1bdc Delete type=0 #22
+2015/03/12-09:52:56.924 1bdc Delete type=3 #20

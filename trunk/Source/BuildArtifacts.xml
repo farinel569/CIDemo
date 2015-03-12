@@ -7,18 +7,17 @@
     <SolutionFile>CIDemo.sln</SolutionFile>
     <!--<RunFunctionalTests>0</RunFunctionalTests> -->
   </PropertyGroup>
-
   <ItemGroup>
     <!-- name to identify the project. Ideally, package name without extension. -->
-    <!-- <BuildComponent Include="Mfc.Inv.RM.Hosts.Web"> -->
+    <BuildComponent Include="CIMain.csproj">
 
     <!-- Switch that instructs the build script to include this component in the current build;
 				1 - Yes, it will be build
 				2 - No, it will be ignored -->
-    <!-- <BuildNow>0</BuildNow> -->
+    <BuildNow>1</BuildNow>
 
     <!-- Project file relative to the Source folder. Projects outside Source\ cannot be build with the generic script.-->
-    <!-- <ProjectBuildfile>Hosts\Mfc.Inv.RM.Hosts.Web\Mfc.Inv.RM.Hosts.Web.csproj</ProjectBuildfile> -->
+    <ProjectBuildfile>CIDemo\CIMain\CIMain.csproj</ProjectBuildfile>
 
     <!-- Only WEB and NON-WEB are allowed; anything else will prevent the component for building.-->
     <!-- <ProjectType>WEB</ProjectType> -->
@@ -35,15 +34,15 @@
 				For web components, this must be a match with the Web.<ENV>.config files. 
 				This are the configurations used internally for building the packages (E.g.: Configuration=DEV) at build time.
 				All upper. At least one configuration must exist - TEST. -->
-    <!-- <ValidConf>DEV;TEST;UAT;PROD</ValidConf> -->
-    <!-- </BuildComponent> -->
+    <ValidConf>DEV;UAT;PROD</ValidConf>
+    </BuildComponent>
 
-    <!-- <BuildComponent Include="BackDatedCurveUpdate">
-      <BuildNow>0</BuildNow>
-      <PackageName>BackDatedCurveUpdate.zip</PackageName>-->
+      <BuildComponent Include="CIDemoTester.csproj">
+      <BuildNow>1</BuildNow>
+      <!--<PackageName>BackDatedCurveUpdate.zip</PackageName>-->
 
       <!-- It can be .sln for NON-WEB if the solution is self contained - one .zip artefact. -->
-      <!--<ProjectBuildfile>Plugins\Market\BackDatedCurveUpdate\BackDatedCurveUpdate.sln</ProjectBuildfile>-->
+      <ProjectBuildfile>CIDemo\CIDemoTester\CIDemoTester.csproj</ProjectBuildfile>
 
     <!--<DestinationDeploymentDir>Plugins\Market</DestinationDeploymentDir>
       <ProjectType>NON-WEB</ProjectType>
@@ -51,11 +50,11 @@
       <RunFunctionalTests>0</RunFunctionalTests>-->
       <!-- Minimum, if no special configurations are required, at least Release must be added and 
 				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
-      <!--<ValidConf>DEV;Release</ValidConf>-->
+      <ValidConf>EV;UAT;PROD</ValidConf>
 
       <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
-      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
-    </BuildComponent>-->
+      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>-->
+    </BuildComponent>
 
     <!--<BuildComponent Include="ClearedSwapsPosition">
       <BuildNow>1</BuildNow>
