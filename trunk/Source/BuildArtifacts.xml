@@ -34,7 +34,7 @@
 				For web components, this must be a match with the Web.<ENV>.config files. 
 				This are the configurations used internally for building the packages (E.g.: Configuration=DEV) at build time.
 				All upper. At least one configuration must exist - TEST. -->
-    <ValidConf>DEV;UAT;PROD</ValidConf>
+    <ValidConf>TEST;UAT;PROD</ValidConf>
     </BuildComponent>
 
       <BuildComponent Include="CIDemoTester">
@@ -50,7 +50,7 @@
       <RunFunctionalTests>0</RunFunctionalTests>-->
       <!-- Minimum, if no special configurations are required, at least Release must be added and 
 				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
-      <ValidConf>EV;UAT;PROD</ValidConf>
+      <ValidConf>TEST;UAT;PROD</ValidConf>
 
       <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
       <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>-->
