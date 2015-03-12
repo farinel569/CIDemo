@@ -1,1 +1,2 @@
 C:\Users\farinro\Source\Repos\CIDemo\trunk\Source\CIDemo\CIMain\bin\UAT\CIDemo.exe.config
+C:\Users\farinro\Source\Repos\CIDemo\trunk\Source\CIDemo\CIMain\obj\UAT\CIMain.csprojResolveAssemblyReference.cache
