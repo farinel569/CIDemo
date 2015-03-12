@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="4D7613FD-4AF5-4610-8F91-3ADDCCA8B0BC" ModuleId="CIDemo" />
+  <Module PersistentId="6C25AB20-C6CE-4E07-99B8-925D5FF5B74E" ModuleId="CIDemoTester" />
+</Modules>

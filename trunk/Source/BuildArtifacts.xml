@@ -1,0 +1,154 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- NOTE: All node values are case sensitive.  -->
+
+  <!-- This is the wrapper solution file - must reside in Source folder. 
+		 Build will fail without. -->
+  <PropertyGroup>
+    <SolutionFile>CIDemo.sln</SolutionFile>
+    <!--<RunFunctionalTests>0</RunFunctionalTests> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- name to identify the project. Ideally, package name without extension. -->
+    <!-- <BuildComponent Include="Mfc.Inv.RM.Hosts.Web"> -->
+
+    <!-- Switch that instructs the build script to include this component in the current build;
+				1 - Yes, it will be build
+				2 - No, it will be ignored -->
+    <!-- <BuildNow>0</BuildNow> -->
+
+    <!-- Project file relative to the Source folder. Projects outside Source\ cannot be build with the generic script.-->
+    <!-- <ProjectBuildfile>Hosts\Mfc.Inv.RM.Hosts.Web\Mfc.Inv.RM.Hosts.Web.csproj</ProjectBuildfile> -->
+
+    <!-- Only WEB and NON-WEB are allowed; anything else will prevent the component for building.-->
+    <!-- <ProjectType>WEB</ProjectType> -->
+
+    <!-- Relative path to the Deployment/<CONFIGURATION>/Packages folder 
+				 This is where the .zip (package) file will be added at build time. 
+				 Do not add any leading or trailing back slashes -->
+    <!-- <DestinationDeploymentDir>Service</DestinationDeploymentDir> -->
+
+    <!-- Name of the zip file created a a result of the build process. -->
+    <!-- <PackageName>Mfc.Inv.RM.Hosts.Web.zip</PackageName> -->
+
+    <!-- List of environments as defined in the repository. 
+				For web components, this must be a match with the Web.<ENV>.config files. 
+				This are the configurations used internally for building the packages (E.g.: Configuration=DEV) at build time.
+				All upper. At least one configuration must exist - TEST. -->
+    <!-- <ValidConf>DEV;TEST;UAT;PROD</ValidConf> -->
+    <!-- </BuildComponent> -->
+
+    <!-- <BuildComponent Include="BackDatedCurveUpdate">
+      <BuildNow>0</BuildNow>
+      <PackageName>BackDatedCurveUpdate.zip</PackageName>-->
+
+      <!-- It can be .sln for NON-WEB if the solution is self contained - one .zip artefact. -->
+      <!--<ProjectBuildfile>Plugins\Market\BackDatedCurveUpdate\BackDatedCurveUpdate.sln</ProjectBuildfile>-->
+
+    <!--<DestinationDeploymentDir>Plugins\Market</DestinationDeploymentDir>
+      <ProjectType>NON-WEB</ProjectType>
+      <CreateCommonZip>1</CreateCommonZip>
+      <RunFunctionalTests>0</RunFunctionalTests>-->
+      <!-- Minimum, if no special configurations are required, at least Release must be added and 
+				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
+      <!--<ValidConf>DEV;Release</ValidConf>-->
+
+      <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
+      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
+    </BuildComponent>-->
+
+    <!--<BuildComponent Include="ClearedSwapsPosition">
+      <BuildNow>1</BuildNow>
+      <PackageName>ClearedSwapsPosition.zip</PackageName>
+      <ProjectBuildfile>Reports\ClearedSwapsPosition\ClearedSwapsPosition.sln</ProjectBuildfile>
+      <DestinationDeploymentDir>Reporting</DestinationDeploymentDir>
+      <ProjectType>NON-WEB</ProjectType>
+      <CreateCommonZip>1</CreateCommonZip>
+      <RunFunctionalTests>0</RunFunctionalTests>-->
+      <!-- Minimum, if no special configurations are required, at least Release must be added and 
+				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
+    <!--<ValidConf>UAT;PROD</ValidConf>-->
+
+      <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
+      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
+    </BuildComponent>
+    <BuildComponent Include="SwapSinkingSchedule">
+      <BuildNow>0</BuildNow>
+      <PackageName>SwapSinkingSchedule.zip</PackageName>
+      <ProjectBuildfile>Reports\SwapSinkingSchedule\SwapSinkingScheduleReport.sln</ProjectBuildfile>
+      <DestinationDeploymentDir>Reporting</DestinationDeploymentDir>
+      <ProjectType>NON-WEB</ProjectType>
+      <CreateCommonZip>1</CreateCommonZip>
+      <RunFunctionalTests>0</RunFunctionalTests>-->
+      <!-- Minimum, if no special configurations are required, at least Release must be added and 
+				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
+      <!--<ValidConf>DEV;Release</ValidConf>-->
+
+      <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
+      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
+    </BuildComponent>
+    <BuildComponent Include="WashTradeReport">
+      <BuildNow>0</BuildNow>
+      <PackageName>WashTradeReport.zip</PackageName>
+      <ProjectBuildfile>Reports\WashTradeReport\WashTradeReport.sln</ProjectBuildfile>
+      <DestinationDeploymentDir>Reporting</DestinationDeploymentDir>
+      <ProjectType>NON-WEB</ProjectType>
+      <CreateCommonZip>1</CreateCommonZip>
+      <RunFunctionalTests>0</RunFunctionalTests>-->
+      <!-- Minimum, if no special configurations are required, at least Release must be added and 
+				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
+      <!--<ValidConf>DEV;UAT;PROD</ValidConf>-->
+
+      <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
+      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
+    </BuildComponent>
+    <BuildComponent Include="PFESimulations">
+      <BuildNow>0</BuildNow>
+      <PackageName>PFESimulations.zip</PackageName>
+      <ProjectBuildfile>Reports\PFESimulationReports\PFESimulationReports.sln</ProjectBuildfile>
+      <DestinationDeploymentDir>Reporting</DestinationDeploymentDir>
+      <ProjectType>NON-WEB</ProjectType>
+      <CreateCommonZip>1</CreateCommonZip>
+      <RunFunctionalTests>0</RunFunctionalTests>-->
+      <!-- Minimum, if no special configurations are required, at least Release must be added and 
+				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
+      <!--<ValidConf>DEV;UAT;PROD</ValidConf>-->
+
+      <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
+      <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
+    </BuildComponent>
+  </ItemGroup>
+  <BuildComponent Include="PFESimulations">
+    <BuildNow>1</BuildNow>
+    <PackageName>PFESimulations.zip</PackageName>
+    <ProjectBuildfile>Reports\PFESimulationReports\PFESimulationReports.sln</ProjectBuildfile>
+    <DestinationDeploymentDir>Reporting</DestinationDeploymentDir>
+    <ProjectType>NON-WEB</ProjectType>
+    <CreateCommonZip>1</CreateCommonZip>
+    <RunFunctionalTests>0</RunFunctionalTests>-->
+    <!-- Minimum, if no special configurations are required, at least Release must be added and 
+				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
+    <!--<ValidConf>DEV;UAT;PROD</ValidConf>-->
+
+    <!-- List of dlls to be excluded from packaging - valid only for NON-WEB applications-->
+    <!--<ExcludedDlls>Olf.NetToolkit.dll;Olf.NetToolkit.Enums.dll;Olf.Openrisk.Net2.dll;Olf.Openrisk.Net2.Enums.dll</ExcludedDlls>
+  </BuildComponent>-->
+  <!--</ItemGroup>-->
+
+  <!-- Valid only for NON-WEB components; 
+		- Not applicable (ignored) for WEB type components
+		- These files are excluded from ALL NON-WEB components packaging and are gathered together into a 
+		  Commons.zip package. -->
+  <!--<ItemGroup>
+    <CommonGroup Include="Mfc.Inv.Findur.Adapter">
+      <DllFile>Mfc.Inv.Findur.Adapter.dll</DllFile>
+    </CommonGroup>
+    <CommonGroup Include="Mfc.Inv.Findur.Common">
+      <DllFile>Mfc.Inv.Findur.Common.dll</DllFile>
+    </CommonGroup>
+    <CommonGroup Include="Mfc.Inv.Invder.Common">
+      <DllFile>Mfc.Inv.Invder.Common.dll</DllFile>
+    </CommonGroup>-->
+  </ItemGroup>
+
+</Project>

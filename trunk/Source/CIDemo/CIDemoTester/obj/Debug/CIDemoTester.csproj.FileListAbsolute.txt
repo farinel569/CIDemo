@@ -1,0 +1,8 @@
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\obj\Debug\CIDemoTester.csprojResolveAssemblyReference.cache
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\bin\Debug\CIDemoTester.dll
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\bin\Debug\CIDemoTester.pdb
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\bin\Debug\CIDemo.exe
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\bin\Debug\CIDemo.pdb
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\obj\Debug\CIDemoTester.dll
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\obj\Debug\CIDemoTester.pdb
+C:\Users\farinro\Source\Repos\CIDemo\CIDemoTester\bin\Debug\CIDemo.xml

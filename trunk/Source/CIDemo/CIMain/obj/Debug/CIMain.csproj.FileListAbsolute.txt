@@ -1,0 +1,8 @@
+C:\Users\farinro\Source\Repos\CIDemo\trunk\Source\CIDemo\CIMain\bin\Debug\CIDemo.exe.config
+C:\Users\farinro\Source\Repos\CIDemo\trunk\Source\CIDemo\CIMain\bin\Debug\CIDemo.XML
+C:\Users\farinro\Source\Repos\CIDemo\trunk\Source\CIDemo\CIMain\obj\Debug\CIDemo.exe
+C:\Users\farinro\Source\Repos\CIDemo\trunk\Source\CIDemo\CIMain\obj\Debug\CIDemo.pdb
+C:\Users\farinro\Source\Repos\trunk\Source\CIDemo\CIMain\bin\Debug\CIDemo.exe.config
+C:\Users\farinro\Source\Repos\trunk\Source\CIDemo\CIMain\bin\Debug\CIDemo.XML
+C:\Users\farinro\Source\Repos\trunk\Source\CIDemo\CIMain\obj\Debug\CIDemo.exe
+C:\Users\farinro\Source\Repos\trunk\Source\CIDemo\CIMain\obj\Debug\CIDemo.pdb
