@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- name to identify the project. Ideally, package name without extension. -->
-    <BuildComponent Include="CIMain.csproj">
+    <BuildComponent Include="CIMain">
 
     <!-- Switch that instructs the build script to include this component in the current build;
 				1 - Yes, it will be build
@@ -20,7 +20,7 @@
     <ProjectBuildfile>CIDemo\CIMain\CIMain.csproj</ProjectBuildfile>
 
     <!-- Only WEB and NON-WEB are allowed; anything else will prevent the component for building.-->
-    <!-- <ProjectType>WEB</ProjectType> -->
+    <<ProjectType>NON-WEB</ProjectType>
 
     <!-- Relative path to the Deployment/<CONFIGURATION>/Packages folder 
 				 This is where the .zip (package) file will be added at build time. 
@@ -37,16 +37,16 @@
     <ValidConf>DEV;UAT;PROD</ValidConf>
     </BuildComponent>
 
-      <BuildComponent Include="CIDemoTester.csproj">
+      <BuildComponent Include="CIDemoTester">
       <BuildNow>1</BuildNow>
       <!--<PackageName>BackDatedCurveUpdate.zip</PackageName>-->
 
       <!-- It can be .sln for NON-WEB if the solution is self contained - one .zip artefact. -->
       <ProjectBuildfile>CIDemo\CIDemoTester\CIDemoTester.csproj</ProjectBuildfile>
 
-    <!--<DestinationDeploymentDir>Plugins\Market</DestinationDeploymentDir>
+    <!--<DestinationDeploymentDir>Plugins\Market</DestinationDeploymentDir>-->
       <ProjectType>NON-WEB</ProjectType>
-      <CreateCommonZip>1</CreateCommonZip>
+      <!--<CreateCommonZip>1</CreateCommonZip>
       <RunFunctionalTests>0</RunFunctionalTests>-->
       <!-- Minimum, if no special configurations are required, at least Release must be added and 
 				 the .csproj must contain the Release|AnyCPU Configuration|Platform -->
