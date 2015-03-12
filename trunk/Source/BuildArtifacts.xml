@@ -25,7 +25,7 @@
     <!-- Relative path to the Deployment/<CONFIGURATION>/Packages folder 
 				 This is where the .zip (package) file will be added at build time. 
 				 Do not add any leading or trailing back slashes -->
-    <!-- <DestinationDeploymentDir>Service</DestinationDeploymentDir> -->
+    <DestinationDeploymentDir>Deployment\TEST\Packages</DestinationDeploymentDir>
 
     <!-- Name of the zip file created a a result of the build process. -->
     <!-- <PackageName>Mfc.Inv.RM.Hosts.Web.zip</PackageName> -->
